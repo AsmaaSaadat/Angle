@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 
+            Angle
+        </title>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+        <script src="java.js" > </script>
+    </head>
+    <body>
+        <div id="home">
+        <h1> ANGLE </h1>
+        <p style="text-align: center;"> <i> for a brighter shine</i></p>
+        <p id="greeting"> </p>
+        <script>
+          if (new Date().getHours() < 18) {
+    document.getElementById("greeting").innerHTML = "Good day!";
+     }
+     else{
+    document.getElementById("greeting").innerHTML = "Good evening!";
+     }
+        </script>
+        <p id="day"> </p>
+        <script> 
+        let day;
+       switch (new Date().getDay()) {
+         case 0:
+           day = " Sunday";
+           break;
+         case 1:
+           day = "Monday";
+           break;
+         case 2:
+           day = "Tuesday";
+           break;
+         case 3:
+           day = "Wednesday";
+           break;
+         case 4:
+           day = "Thursday";
+           break;
+         case 5:
+           day = "Friday";
+           break;
+         case  6:
+           day = "Saturday";
+       }
+       document.getElementById("day").innerHTML = "Today is " + day;
+        </script>
+        <p> 
+            Enter your email address. This address will be used <br> to send you order status updates.
+        </p>
+        
+       <label for="text"> Email: </label>
+        <input id="text" type="text" name="email" required placeholder="asmaa@gmail.com" size="35" maxlength="50">  <br>
+        <input type="checkbox" name="check" value="checked" required checked>
+        <label for="text0"> Keep me up to date on news and exclusive offers. </label> 
+       
+        <button  onclick="ShopNow()" value="shop now"> <b>Shop Now </b></button>  
+        
+        <button onclick="Contact()" value="contact us"> <b>Contact Us</b></button>  
+        
+        </div>
+        <h2> Categories</h2>
+            <div class="gallery">
+                <a target="_blank" href="Necklaces.jpg">
+                  <img src="Necklaces.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc" >Necklaces </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="Earrings.jpg">
+                  <img src="Earrings.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc ">Earrings </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="Bracelet.jpg">
+                  <img src="Bracelet.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">Bracelets </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="Rings.jpg">
+                  <img src="Rings.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">Rings </div>
+            </div>
+            <br><br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> 
+            <h2> Shop Now </h2>
+            <div class="gallery">
+                <a target="_blank" href="Necklace.jpg">
+                  <img src="Necklace.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc" >Heart Necklace <br> 160 LE </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="Necklace1.jpg">
+                  <img src="Necklace1.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc" >The World is yours <br> 160 LE </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="Ring.jpg">
+                  <img src="Ring.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc" >Mint Ring <br> 100 LE </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="Ring1.jpg">
+                  <img src="Ring1.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc" >Evil Eye Ring <br> 100 LE </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="Bracelet1.jpg">
+                  <img src="Bracelet1.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc" >Gothic Bracelet <br> 120 LE </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="Earring.jpg">
+                  <img src="Earring.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc" >Bold Earring <br> 100 LE </div>
+            </div>
+        <br><br><br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> 
+       <div id="end">
+        <h1>
+            About us
+         </h1>   
+         <p>
+            <i> Hello dear</i> <br>
+            Our brand <i>ANGLE</i> Based in Egypt, rose from our love and passion for fashion.<br>
+            we embrace the use of various jewelry that you can combie easily as a final touch <br>
+            to your style and personality.
+        </p>
+
+        <!-- Form to make order -->
+       <h1> Shipping & Delivery </h1>
+       <p> We ship within Egypt.</p>
+       <form> 
+            <label for="text1"> Full Name </label>
+            <input id="text1" type="text" name="Full Name" required placeholder="Asmaa Saadat" > <br>
+            <label for="text2"> Phone</label>
+            <input id="text2" type="text" name="phone" required placeholder="0123456789"> <br>
+            <lable for="text3"> Address </lable>
+            <input id="text3" type="text" name="address" required placeholder="Street address,apartment"><br>
+            <input type="text" name="city" required placeholder="City Within Egypt" > <br>
+            <select id="state" name="state" type="text">
+                <option value="o" selected disabled>state </option>
+                <option value="1"> Gharbia </option>
+                <option value="2"> Cairo </option>
+                <option value="3"> Alexandria </option>
+                <obtion value="4"> Luxor</obtion>
+            </select> <br>
+            <input type="submit" onclick="Check()" value="Checkout">
+        </form>
+       </div>
+       
+    </body>
+</html>
